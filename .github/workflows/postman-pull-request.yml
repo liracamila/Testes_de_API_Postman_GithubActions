@@ -40,12 +40,12 @@ jobs:
       # Run the POSTMAN collection
       - name: Run POSTMAN collection on real time
         run: |
-          newman run nova__Colecao.postman_collection.json -e workspace.postman_environment.json 
+          newman run minhacolecao.postman_collection.json -e meuambiente.postman_environment.json 
 
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
         run: |
-        newman run nova__Colecao.postman_collection.json -e workspace.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme  > testResults/runreport1.html
+        newman run minhacolecao.postman_collection.json -e meuambiente.postman_environment.json -r htmlextra --reporter-htmlextra-export testResults/htmlreport.html --reporter-htmlextra-darkTheme  > testResults/runreport1.html
 
 
       # Upload the contents of Test Results directory to workspace
